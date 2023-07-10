@@ -7,12 +7,15 @@ import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
 import med.voll.api.endereco.DadosEndereco;
 
-public record DadosCadastroMedico(
-        @NotBlank
+public record DadosCadastroMedico( // classe para DTO
+        @NotBlank //daqui para baixo todas as anotações são bean validation
         String nome,
         @NotBlank
         @Email
         String email,
+
+        @NotBlank
+        String telefone,
 
         @NotBlank
         @Pattern(regexp = "\\d{4,6}")
