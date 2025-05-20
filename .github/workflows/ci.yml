@@ -24,7 +24,8 @@ jobs:
         run: mvn clean package -DskipTests=false
 
       - name: Executar testes
-        run: mvn test
+        run: mvn test -Dspring.profiles.active=test
+
 
       - name: Gerar relatório de cobertura (JaCoCo)
         run: mvn jacoco:report
