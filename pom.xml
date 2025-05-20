@@ -112,7 +112,7 @@
 				<version>3.0.0</version>
 				<configuration>
 					<systemPropertyVariables>
-						<spring.profiles.active>test</spring.profiles.active>
+						<spring.profiles.active>ci</spring.profiles.active>
 					</systemPropertyVariables>
 				</configuration>
 			</plugin>
