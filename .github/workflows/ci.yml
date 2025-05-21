@@ -64,8 +64,6 @@ jobs:
 
       - name: Upload do relatório de cobertura
         uses: actions/upload-artifact@v2
-
-
         with:
           name: cobertura-jacoco
           path: target/site/jacoco
