@@ -63,11 +63,11 @@ jobs:
         run: mvn clean verify -U --no-transfer-progress
 
       - name: Upload do relatório de cobertura
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v3.1.2
         with:
           name: cobertura-jacoco
           path: target/site/jacoco
-      
+
 
 
       - name: Login no Docker Hub
