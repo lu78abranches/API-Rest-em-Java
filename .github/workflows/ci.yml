@@ -63,7 +63,8 @@ jobs:
         run: mvn clean verify -U --no-transfer-progress
 
       - name: Upload do relatório de cobertura
-        uses: actions/upload-artifact@8f5b8b90b06ccf329a22fdf8b6b0a2c9d899d3df
+        uses: actions/upload-artifact@v2
+
 
         with:
           name: cobertura-jacoco
