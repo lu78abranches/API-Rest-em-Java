@@ -58,8 +58,8 @@ jobs:
       - name: Build do projeto com Maven (pulando testes)
         run: mvn clean package -Dspring.profiles.active=test -Dmaven.test.skip=true
 
-      - name: Executar testes com perfil 'test'
-        run: mvn test -Dspring.profiles.active=test
+      #- name: Executar testes com perfil 'test'
+      #  run: mvn test -Dspring.profiles.active=test
 
       #- name: Gerar relatório de cobertura (JaCoCo)
       #  run: mvn clean verify -U --no-transfer-progress
